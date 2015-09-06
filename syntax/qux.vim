@@ -4,7 +4,7 @@
 " URL:              https://github.com/qux-lang/vim-qux/
 " Latest Revision:  2015-09-06
 " Filenames:        *.qux
-" Version:          0.1.0.0
+" Version:          0.1.0.1
 
 if exists("b:current_syntax")
     finish

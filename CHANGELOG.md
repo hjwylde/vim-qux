@@ -1,6 +1,6 @@
 ## Changelog
 
-#### Upcoming in master
+#### v0.1.0.1
 
 * Fixed function highlighting for camel case names.
 
