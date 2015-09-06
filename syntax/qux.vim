@@ -49,7 +49,7 @@ hi def link values  constant
 
 " Identifiers
 
-syn match functions '[a-z_][\w']*'
+syn match functions '[a-z_][a-zA-Z_']*'
 
 hi def link functions function
 
@@ -60,14 +60,10 @@ syn keyword conditionals else if
 syn keyword keywords return
 syn keyword repeats while
 
-syn match operators '!!'
-syn match operators '|'
+syn match operators '!!\||'
 syn match operators '[*/%+-]'
-syn match operators '[<>]'
-syn match operators '<='
-syn match operators '>='
-syn match operators '=='
-syn match operators '!='
+syn match operators '<\|<=\|>\|>='
+syn match operators '==\|!='
 
 hi def link conditionals    conditional
 hi def link keywords        keyword
