@@ -2,9 +2,9 @@
 " Language:         Qux
 " Maintainer:       Henry J. Wylde
 " URL:              https://github.com/qux-lang/vim-qux/
-" Latest Revision:  2015-09-06
+" Latest Revision:  2015-10-10
 " Filenames:        *.qux
-" Version:          0.1.0.1
+" Version:          0.2.0.0
 
 if exists("b:current_syntax")
     finish
@@ -35,8 +35,8 @@ hi def link commentLine     comment
 
 " Constants
 
-syn keyword bools false true
-syn keyword values nil
+syn keyword bools   false true
+syn keyword values  nil
 
 syn match nat '\d\+'
 syn match nat '0o\o\+'
@@ -45,6 +45,16 @@ syn match nat '0x\x\+'
 hi def link bools   boolean
 hi def link nat     number
 hi def link values  constant
+
+
+" Modules
+
+syn keyword processors module
+
+syn match module '\(module \)\@<=.*$'
+
+hi def link processors  preproc
+hi def link module      normal
 
 
 " Identifiers
@@ -56,9 +66,9 @@ hi def link functions function
 
 " Statements
 
-syn keyword conditionals else if
-syn keyword keywords return
-syn keyword repeats while
+syn keyword conditionals    else if
+syn keyword keywords        return
+syn keyword repeats         while
 
 syn match operators '!!\||'
 syn match operators '[*/%+-]'

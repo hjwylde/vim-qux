@@ -1,5 +1,9 @@
 ## Changelog
 
+#### v0.2.0.0
+
+* Added highlighting for `module` statement
+
 #### v0.1.0.1
 
 * Fixed function highlighting for camel case names.
