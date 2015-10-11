@@ -49,12 +49,14 @@ hi def link values  constant
 
 " Modules
 
-syn keyword processors module
+syn keyword processors import module
 
 syn match module '\(module \)\@<=.*$'
+syn match import '\(import \)\@<=.*$'
 
 hi def link processors  preproc
 hi def link module      normal
+hi def link import      normal
 
 
 " Identifiers
