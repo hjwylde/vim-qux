@@ -2,11 +2,12 @@
 
 #### Upcoming in master
 
-* Added highlighting for `import` statement
+* Added highlighting for `import` statement.
+* Added highlighting for types.
 
 #### v0.2.0.0
 
-* Added highlighting for `module` statement
+* Added highlighting for `module` statement.
 
 #### v0.1.0.1
 

@@ -2,7 +2,7 @@
 " Language:         Qux
 " Maintainer:       Henry J. Wylde
 " URL:              https://github.com/qux-lang/vim-qux/
-" Latest Revision:  2015-10-10
+" Latest Revision:  2015-10-28
 " Filenames:        *.qux
 " Version:          0.2.0.0
 
@@ -61,13 +61,14 @@ hi def link import      normal
 
 " Identifiers
 
-syn match functions '[a-z_][a-zA-Z_']*'
+syn match functions '[a-z_][a-zA-Z0-9_']*'
 
 hi def link functions function
 
 
 " Statements
 
+syn keyword keywords        external type
 syn keyword conditionals    else if
 syn keyword keywords        return
 syn keyword repeats         while
@@ -85,7 +86,7 @@ hi def link repeats         repeat
 
 " Types
 
-syn keyword types Bool Int Nil
+syn match types '[A-Z][a-zA-Z0-9_']*'
 
 hi def link types type
 
