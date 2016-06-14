@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:         Qux
 " Maintainer:       Henry J. Wylde
-" URL:              https://github.com/qux-lang/vim-qux/
+" URL:              https://github.com/hjwylde/vim-qux/
 " Latest Revision:  2015-10-28
 " Filenames:        *.qux
 " Version:          0.2.0.0
@@ -108,4 +108,3 @@ hi def link todos todo
 
 
 let b:current_syntax = 'qux'
-
