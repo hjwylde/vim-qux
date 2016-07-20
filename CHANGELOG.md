@@ -1,6 +1,6 @@
 # Changelog
 
-### Upcoming in master
+### Upcoming
 
 *Major*
 
