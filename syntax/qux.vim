@@ -10,11 +10,9 @@ if exists("b:current_syntax")
     finish
 endif
 
-
 " Options
 
 let foldmethod='indent'
-
 
 " Errors
 
@@ -22,16 +20,13 @@ syn match errors '.'
 
 hi def link errors error
 
-
 " Comments
 
 syn region commentBlock start='/\*' end='\*/' keepend contains=todos,@Spell
-
 syn region commentLine  start='#' end='$' keepend contains=todos,@Spell
 
 hi def link commentBlock    comment
 hi def link commentLine     comment
-
 
 " Constants
 
@@ -46,7 +41,6 @@ hi def link bools   boolean
 hi def link nat     number
 hi def link values  constant
 
-
 " Modules
 
 syn keyword processors import module
@@ -58,13 +52,11 @@ hi def link processors  preproc
 hi def link module      normal
 hi def link import      normal
 
-
 " Identifiers
 
 syn match functions '[a-z_][a-zA-Z0-9_']*'
 
 hi def link functions function
-
 
 " Statements
 
@@ -83,13 +75,11 @@ hi def link keywords        keyword
 hi def link operators       operator
 hi def link repeats         repeat
 
-
 " Types
 
 syn match types '[A-Z][a-zA-Z0-9_']*'
 
 hi def link types type
-
 
 " Specials
 
@@ -99,12 +89,10 @@ syn match underscore '_'
 hi def link delimiters delimiter
 hi def link underscore delimiter
 
-
 " Todos
 
 syn keyword todos contained TODO FIXME
 
 hi def link todos todo
-
 
 let b:current_syntax = 'qux'
