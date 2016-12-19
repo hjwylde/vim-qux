@@ -2,7 +2,7 @@
 " Language:         Qux
 " Maintainer:       Henry J. Wylde
 " URL:              https://github.com/hjwylde/vim-qux/
-" Latest Revision:  2015-10-28
+" Latest Revision:  2016-12-19
 " Filenames:        *.qux
 " Version:          0.2.0.0
 
@@ -88,11 +88,5 @@ syn match underscore '_'
 
 hi def link delimiters delimiter
 hi def link underscore delimiter
-
-" Todos
-
-syn keyword todos contained TODO FIXME
-
-hi def link todos todo
 
 let b:current_syntax = 'qux'
