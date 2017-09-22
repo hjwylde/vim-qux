@@ -2,7 +2,7 @@
 " Language:         Qux
 " Maintainer:       Henry J. Wylde
 " URL:              https://github.com/hjwylde/vim-qux/
-" Latest Revision:  2016-12-19
+" Latest Revision:  2017-09-22
 " Filenames:        *.qux
 " Version:          0.2.0.0
 
@@ -30,8 +30,7 @@ hi def link commentLine     comment
 
 " Constants
 
-syn keyword bools   false true
-syn keyword values  nil
+syn keyword bools false true
 
 syn match nat '\d\+'
 syn match nat '0o\o\+'
@@ -39,7 +38,12 @@ syn match nat '0x\x\+'
 
 hi def link bools   boolean
 hi def link nat     number
-hi def link values  constant
+
+" Values
+
+syn region str start='"' end='"' keepend contains=@Spell
+
+hi def link str string
 
 " Modules
 
@@ -65,7 +69,6 @@ syn keyword conditionals    else if
 syn keyword keywords        return
 syn keyword repeats         while
 
-syn match operators '!!\||'
 syn match operators '[*/%+-]'
 syn match operators '<\|<=\|>\|>='
 syn match operators '==\|!='
