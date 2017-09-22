@@ -36,14 +36,11 @@ syn match nat '\d\+'
 syn match nat '0o\o\+'
 syn match nat '0x\x\+'
 
-hi def link bools   boolean
-hi def link nat     number
-
-" Values
-
 syn region str start='"' end='"' keepend contains=@Spell
 
-hi def link str string
+hi def link bools   boolean
+hi def link nat     number
+hi def link str     string
 
 " Modules
 
